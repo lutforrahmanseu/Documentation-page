@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(193, 241, 241);
+}
+.main-body{
+    display: grid;
+    grid-template-columns:minmax(300px,auto)1fr;
+    grid-template-areas:"navbar mainContent";
+    grid-gap: 20px;
+
+}
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;   
+}
+nav#navbar a {
+    display: block;
+    border: 2px solid rgb(163, 119, 119);
+    padding: 10px;
+    margin: 10px 2px;
+    text-decoration: none;
+    color: rgb(159, 62, 204);
+}
+main#main-doc {
+    grid-area: mainContent;
+}
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(148, 135, 160);
+}
+code {
+    background-color: rgb(204, 195, 195);
+    display: block;
+    padding: 20px;
+}
+h3{
+  
+    text-align: center;
+    font-family: verdana;
+    text-shadow: 5px 5px 10px #1ec6d9;
+}
